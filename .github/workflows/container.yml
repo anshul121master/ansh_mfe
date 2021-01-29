@@ -13,7 +13,7 @@ defaults:
   run:
     working-directory: packages/container
 
-# specifiying jobs to run inside container
+# specifiying jobs to run inside container process
 jobs:
   build:
     runs-on: ubuntu-latest
