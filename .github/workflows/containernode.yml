@@ -1,4 +1,4 @@
-name: container-deployment
+name: deployment-container
 
 # below lines means whenever a push event occurs on master in container
 on:
