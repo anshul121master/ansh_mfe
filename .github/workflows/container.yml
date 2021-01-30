@@ -1,4 +1,4 @@
-name: deploy-container
+name: continous-deployment
 
 # below lines means whenever a push event occurs on master in container
 on:
