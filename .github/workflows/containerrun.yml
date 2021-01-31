@@ -1,11 +1,12 @@
 name: deployment-container
 
 # below lines means whenever a push event occurs on master in container
-on: [push]
-    # branches:
-    #   - main
-    # paths:
-    #   - '/packages/container/**'
+on: 
+  push:
+    branches:
+      - main
+    paths:
+      - '/packages/container/**'
 
 # setting the execution env inside container
 # defaults:
