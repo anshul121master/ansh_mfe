@@ -6,8 +6,7 @@ on:
     branches:
       - main
     paths:
-      # - '/packages/container/**'
-      - '**.js'
+      - '/packages/container/*'
 
 # setting the execution env inside container
 # defaults:
