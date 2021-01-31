@@ -1,17 +1,16 @@
 name: deployment-container
 
 # below lines means whenever a push event occurs on master in container
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - '/packages/container/**'
+on: [push]
+    # branches:
+    #   - main
+    # paths:
+    #   - '/packages/container/**'
 
 # setting the execution env inside container
-defaults:
-  run:
-    working-directory: packages/container
+# defaults:
+#   run:
+#     working-directory: packages/container
 
 # specifiying jobs to run inside container
 jobs:
@@ -19,6 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
       - run: npm install
       - run: npm run build
         env:
